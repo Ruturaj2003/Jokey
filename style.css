@@ -11,26 +11,51 @@ body {
 	font-family: 'Lugrasimo', sans-serif;
 	font-family: 'Tektur', cursive;
 	margin: 0;
-	background-color: #45BADD;
+	background-color: #45badd;
 }
 
 .title {
 	font-family: 'Lugrasimo', sans-serif;
-    background-color: #f31559;
-    height: 150px;
-    width: full;
-  color: #FFECAF;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  }
-  h1{
-    margin-bottom: 0;
-  }
+	background-color: #f31559;
+	height: 150px;
+	width: full;
+	color: #ffecaf;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+h1 {
+	margin-bottom: 0;
+  letter-spacing: 12px;
+}
 
 button {
 	font-family: 'Tektur';
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  background-color: #f31559;
+  border: none;
+  border-radius: 12px;
+box-shadow: 10px 10px 20px 0px rgba(255, 64, 163, 0.65);
+
+}
+
+button:hover{
+  filter: brightness(90%);
+
+}
+
+button:active{
+  transform: scale(0.96);
+}
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
 }
 
 .container {
@@ -42,6 +67,14 @@ button {
 	align-items: center;
 	background: url('./robot.gif');
 	background-size: contain;
-  background-position: -195px;
-  background-repeat: no-repeat;
+	background-position: -195px;
+	background-repeat: no-repeat;
+}
+
+/* Media Qury : Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .container{
+    background-size: cover;
+    background-position: -195px;
+  }
 }
