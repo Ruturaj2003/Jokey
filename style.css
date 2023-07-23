@@ -27,35 +27,35 @@ body {
 }
 h1 {
 	margin-bottom: 0;
-  letter-spacing: 12px;
+}
+#dotex {
+	letter-spacing: 6px;
 }
 
 button {
 	font-family: 'Tektur';
-  cursor: pointer;
-  outline: none;
-  width: 200px;
-  height: 50px;
-  font-size: 20px;
-  color: white;
-  background-color: #f31559;
-  border: none;
-  border-radius: 12px;
-box-shadow: 10px 10px 20px 0px rgba(255, 64, 163, 0.65);
-
+	cursor: pointer;
+	outline: none;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	color: white;
+	background-color: #f31559;
+	border: none;
+	border-radius: 12px;
+	box-shadow: 10px 10px 20px 0px rgba(255, 64, 163, 0.65);
 }
 
-button:hover{
-  filter: brightness(90%);
-
+button:hover {
+	filter: brightness(90%);
 }
 
-button:active{
-  transform: scale(0.96);
+button:active {
+	transform: scale(0.96);
 }
 button:disabled {
-  cursor: default;
-  filter: brightness(30%);
+	cursor: default;
+	filter: brightness(30%);
 }
 
 .container {
@@ -73,8 +73,8 @@ button:disabled {
 
 /* Media Qury : Tablet or Smaller */
 @media screen and (max-width: 1000px) {
-  .container{
-    background-size: cover;
-    background-position: -195px;
-  }
+	.container {
+		background-size: cover;
+		background-position: -195px;
+	}
 }
